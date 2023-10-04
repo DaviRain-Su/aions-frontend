@@ -1,0 +1,143 @@
+.list-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #2e2e2e;
+    /* Dark border color */
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px 0;
+    background: linear-gradient(180deg, #50a3a2 0%, #265866 100%);
+    /* Solana-inspired gradient background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow effect */
+}
+
+.list-item:hover {
+    transform: scale(1.02);
+    /* Slight scale effect on hover */
+}
+
+.list-item>strong {
+    padding: 1.2rem;
+    background: #265866;
+    /* Darker background color */
+    color: #ffffff;
+    /* White text color */
+    border-bottom: 1px solid #50a3a2;
+    /* Accent color for the bottom border */
+}
+
+.list-item a {
+    text-decoration: none;
+    color: #ffcc00;
+    /* Solana yellow color */
+    transition: color 0.3s ease;
+}
+
+.list-item a:hover {
+    color: #ff9900;
+    /* Darker yellow on hover */
+}
+
+.list-item .info {
+    display: flex;
+    flex-direction: row;
+    color: #aaaaaa;
+    padding: 0.5rem;
+}
+
+.list-item .introduce {
+    padding: 0.5rem;
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-btn:hover {
+    background-color: #45a049;
+    /* Darker green on hover */
+}
+
+.pagination-btn.disabled {
+    background-color: #ddd;
+    /* Grey for disabled button */
+    cursor: not-allowed;
+}
+
+.page-number {
+    margin: 0 1rem;
+    font-size: 16px;
+    color: #333;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.list-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.introduce {
+    font-size: 1rem;
+    color: #555;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.author {
+    margin-right: 10px;
+}
+
+.time {
+    font-style: italic;
+}
