@@ -65,7 +65,6 @@ function App() {
                   </a>
                 </h3>
                 <p className="introduce">{item.introduce}</p>
-                {/* <div id={`disqus_thread_${item.id}`}></div> */}
               </div>
               <div className="info">
                 <span className="author">by {item.author}</span>
