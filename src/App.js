@@ -37,6 +37,21 @@ function App() {
     }
   };
 
+  // Disqus configuration
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://aions.disqus.com/embed.js';
+    script.setAttribute('data-timestamp', +new Date());
+    (document.head || document.body).appendChild(script);
+    // Load Disqus comment count script
+    const countScript = document.createElement('script');
+    countScript.id = 'dsq-count-scr';
+    countScript.src = 'https://aions.disqus.com/embed.js';
+    countScript.async = true;
+    document.body.appendChild(countScript);
+  }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -50,6 +65,7 @@ function App() {
                   </a>
                 </h3>
                 <p className="introduce">{item.introduce}</p>
+                {/* <div id={`disqus_thread_${item.id}`}></div> */}
               </div>
               <div className="info">
                 <span className="author">by {item.author}</span>
@@ -58,6 +74,8 @@ function App() {
             </li>
           ))}
         </ul>
+
+        <div id="disqus_thread"></div>
 
         <div className="pagination">
           <button
