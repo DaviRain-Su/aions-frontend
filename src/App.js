@@ -74,7 +74,6 @@ function App() {
           ))}
         </ul>
 
-        <div id="disqus_thread"></div>
 
         <div className="pagination">
           <button
@@ -93,6 +92,8 @@ function App() {
             Next &gt;
           </button>
         </div>
+
+        <div id="disqus_thread"></div>
 
       </header>
     </div>
