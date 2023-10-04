@@ -44,7 +44,11 @@ function App() {
           {data.map(item => (
             <li key={item.id} className="list-item">
               <div className="item-content">
-                <h3 className="title">{item.title}</h3>
+                <h3 className="title">
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.title}
+                  </a>
+                </h3>
                 <p className="introduce">{item.introduce}</p>
               </div>
               <div className="info">
